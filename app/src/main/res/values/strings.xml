@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">ColorMate</string>
+    <string name="masuk">Masuk</string>
+    <string name="sandi">Kata Sandi</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="daftar">Daftar</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="Diperlukan">Diperlukan</string>
+    <string name="Pengaturan">Pengaturan</string>
+    <string name="Tema">Pilih Tema</string>
+    <string name="tutorial">Panduan Pemakaian</string>
+    <string name="descApp">
+        Nama Aplikasi : Color Recognition
+        \nDeskripsi Singkat Aplikasi :
+        \nColor Recognition adalah aplikasi berbasis Android yang dirancang untuk membantu pengguna, khususnya penyandang buta warna, dalam mengenali warna di sekitar mereka melalui fitur deteksi kamera. Aplikasi ini juga menyediakan fitur edukatif seperti tes buta warna dan riwayat deteksi warna.
+    </string>
+    <string name="tujuan">
+        Tujuan Pembuatan :
+        \nAplikasi ini dikembangkan sebagai bagian dari tugas akhir/Skripsi dalam Program Studi Teknik Informatika. Tujuannya adalah memberikan solusi berbasis teknologi yang inklusif, agar pengguna dengan gangguan persepsi warna tetap dapat mengenali dan membedakan warna secara mandiri.
+    </string>
+    <string name="fitur">
+        Fitur Utama :
+        \nDeteksi warna semi real-time menggunakan kamera
+        \nTampilan nama warna
+        \nRiwayat hasil deteksi warna
+        \nkuis buta warna berbasis gambar
+        \nTampilan antarmuka yang sederhana dan mudah digunakan
+    </string>
+    <string name="profil">
+        Profil Singkat Pengembang :
+        \nNama: Fachrel Muhammad
+        \nProgram Studi: Teknik Informatika
+        \nUniversitas: Universitas Satya Negara Indonesia
+        \nTahun Pembuatan: 2025
+    </string>
+    <string name="terimakasih">
+        Terima kasih telah menggunakan aplikasi Color Recognition. Semoga aplikasi ini dapat memberikan kemudahan dalam mengenali warna dan menjadi pendamping yang bermanfaat dalam keseharian Anda.
+    </string>
+    <string name="step1kuis">
+        Buka halaman kuis buta warna.
+    </string>
+    <string name="step2kuis">
+        Jawab pertanyaan sesuai dengan keadaan yang Anda alami selama ini.
+    </string>
+    <string name="step3kuis">
+        Klik tombol \'Selanjutnya\' untuk melanjutkan ke pertanyaan berikutnya, dan gunakan tombol \'Sebelumnya\' untuk kembali ke pertanyaan sebelumnya.
+    </string>
+    <string name="step4kuis">
+        Jawab semua pertanyaan sampai selesai.
+    </string>
+    <string name="step5kuis">
+        Jika semua pertanyaan sudah terjawab, klik tombol \'Selesai\' untuk menyelesaikan kuis.
+    </string>
+    <string name="step6kuis">
+        Hasil kuis, diagnosa, rekomendasi akan tampil pada layar.
+    </string>
+    <string name="step1scan">
+        Buka halaman Pemindai Warna.
+    </string>
+    <string name="step2scan">
+        Arahkan kamera ke warna yang ingin anda deteksi, pastikan warna yang dideteksi berada di dalam kotak putih.
+    </string>
+    <string name="step3scan">
+        Jika warna yang ingin dipindai sudah di dalam kotak putih, lalu tap tombol \'Deteksi Warna\'.
+    </string>
+    <string name="step4scan">
+        Warna akan terdeteksi dan ditampilkan pada layar.
+    </string>
+    <string name="step5scan">
+        Jika ingin memindai warna lain, arahkan warna lain yang ingin dipindai dan tap tombol kembali, secara otomatis warna yang dipindai tampil pada layar.
+    </string>
+</resources>

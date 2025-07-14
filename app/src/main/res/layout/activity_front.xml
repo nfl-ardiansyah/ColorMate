@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".FrontActivity">
+
+    <!-- TextView: Selamat Datang -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:fontFamily="@font/fig_700"
+        android:text="Selamat Datang \n di"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_onBackground"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!-- Illustration -->
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="@dimen/illustration_width"
+        android:layout_height="@dimen/illustration_height"
+        android:src="@drawable/mata"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button Group -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/illustration"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/regist_btn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/daftar"
+            android:textSize="@dimen/text_size_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:backgroundTint="@color/md_theme_onTertiary"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/masuk"
+            android:textSize="@dimen/text_size_button"
+            app:strokeColor="@color/md_theme_primary"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tutorialText"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_small"
+            android:fontFamily="@font/fig_700"
+            android:text="@string/tutorial"
+            android:textColor="@color/md_theme_primary"
+            android:textSize="@dimen/text_size_label" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

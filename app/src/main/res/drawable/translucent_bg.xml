@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#B1353535" /> <!-- Transparan -->
+    <stroke
+        android:width="1.5dp"
+        android:color="@android:color/white" /> <!-- Garis putih -->
+
+    <corners android:radius="7dp" />
+</shape>

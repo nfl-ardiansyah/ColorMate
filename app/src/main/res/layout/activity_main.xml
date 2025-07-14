@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Preview Kamera sebagai background -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.camera.view.PreviewView>
+
+    <!-- Overlay dengan semua elemen UI -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Arahkan ke warna yang ingin dideteksi"
+            app:layout_constraintBottom_toTopOf="@+id/targetOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/fig_500"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/translucent_bg"/>
+
+        <!-- Tombol Back -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back_btn"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#80000000"
+            app:icon="@drawable/ic_back"
+            app:iconSize="@dimen/icon_size_medium"
+            app:iconTint="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Kotak di Tengah -->
+        <View
+            android:id="@+id/targetOverlay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/target_frame"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- TextView untuk hasil deteksi -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/translucent_bg"
+            android:padding="12dp"
+            android:text="Result"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/fig_500"
+            app:layout_constraintTop_toBottomOf="@+id/targetOverlay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Tombol Deteksi -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/detectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="122dp"
+            android:text="Deteksi Warna"
+            android:fontFamily="@font/fig_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

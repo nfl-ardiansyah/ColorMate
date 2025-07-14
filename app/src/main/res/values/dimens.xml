@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base dimensions for normal screens -->
+
+    <!-- Margins -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+    <dimen name="margin_xxlarge">38dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_extra_large">32dp</dimen>
+
+    <!-- Input field specific -->
+    <dimen name="input_padding">16dp</dimen>
+    <dimen name="input_corner_radius">15dp</dimen>
+    <dimen name="card_corner_radius">15dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_title">32sp</dimen>
+    <dimen name="text_size_label">18sp</dimen>
+    <dimen name="text_size_input">16sp</dimen>
+    <dimen name="text_size_button">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+
+    <!-- Button dimensions -->
+    <dimen name="button_height">48dp</dimen>
+
+    <!-- Image dimensions for normal screens -->
+    <dimen name="illustration_width">264dp</dimen>
+    <dimen name="illustration_height">294dp</dimen>
+
+    <!-- Universal Logo Dimensions -->
+    <dimen name="logo_width">180dp</dimen>
+    <dimen name="logo_height">60dp</dimen>
+    <dimen name="logo_width_large">240dp</dimen>
+    <dimen name="logo_height_large">80dp</dimen>
+    <dimen name="logo_padding">16dp</dimen>
+
+    <!-- Universal Text Sizes -->
+    <dimen name="text_xxlarge">36sp</dimen>    <!-- Untuk judul utama -->
+    <dimen name="text_xlarge">24sp</dimen>     <!-- Subjudul -->
+    <dimen name="text_large">20sp</dimen>      <!-- Tombol/Header -->
+    <dimen name="text_medium">16sp</dimen>     <!-- Teks normal -->
+    <dimen name="text_small">14sp</dimen>      <!-- Teks kecil -->
+
+    <!-- Universal Button Sizes -->
+    <dimen name="button_width_standard">200dp</dimen>
+    <dimen name="button_width_wide">280dp</dimen>
+    <dimen name="button_height_standard">48dp</dimen>
+    <dimen name="button_height_tall">56dp</dimen>
+    <dimen name="button_corner_radius">12dp</dimen>
+
+    <!-- Universal Icon Sizes -->
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">36dp</dimen>
+
+    <dimen name="card_elevation">3dp</dimen>
+</resources>

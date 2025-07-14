@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".auth.RegisterActivity">
+
+    <!-- Back Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_btn"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height_standard"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:icon="@drawable/ic_back"
+        app:iconSize="@dimen/icon_size_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:paddingHorizontal="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_medium"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Registration Form Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardForm"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_large">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/home_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fig_700"
+                    android:text="@string/daftar"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onPrimaryContainer"
+                    android:textSize="@dimen/text_xxlarge" />
+
+                <!-- Email Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:fontFamily="@font/fig_600"
+                    android:text="e-mail"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onPrimaryContainer"
+                    android:textSize="@dimen/text_large" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_layout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:textColorHint="@color/md_theme_onSurfaceVariant"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
+                    app:boxStrokeColor="@color/text_input_box_stroke"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/md_theme_onPrimaryContainer"
+                    app:helperText="@string/Diperlukan"
+                    app:helperTextTextAppearance="@style/CustomHelperText"
+                    app:helperTextTextColor="@color/md_theme_errorContainer_mediumContrast"
+                    app:hintTextColor="@color/md_theme_onPrimaryContainer">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_regist_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_500"
+                        android:hint="Masukkan Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/input_padding"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/md_theme_onBackground"
+                        android:textColorHint="@color/md_theme_onSurface"
+                        android:textSize="@dimen/text_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Username Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fig_600"
+                    android:text="Nama Pengguna"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onPrimaryContainer"
+                    android:textSize="@dimen/text_large" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/username_layout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:textColorHint="@color/md_theme_onSurfaceVariant"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
+                    app:boxStrokeColor="@color/text_input_box_stroke"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/md_theme_onPrimaryContainer"
+                    app:helperText="@string/Diperlukan"
+                    app:helperTextTextAppearance="@style/CustomHelperText"
+                    app:helperTextTextColor="@color/md_theme_errorContainer_mediumContrast"
+                    app:hintTextColor="@color/md_theme_onPrimaryContainer">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_regist_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_500"
+                        android:hint="Masukkan Nama Pengguna"
+                        android:inputType="text"
+                        android:padding="@dimen/input_padding"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/md_theme_onBackground"
+                        android:textColorHint="@color/md_theme_onSurface"
+                        android:textSize="@dimen/text_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fig_600"
+                    android:text="@string/sandi"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onPrimaryContainer"
+                    android:textSize="@dimen/text_large" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_layout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:textColorHint="@color/md_theme_onSurfaceVariant"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
+                    app:boxStrokeColor="@color/text_input_box_stroke"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="16"
+                    app:counterTextAppearance="@style/CustomHelperText"
+                    app:counterTextColor="@color/md_theme_onPrimaryContainer"
+                    app:cursorColor="@color/md_theme_onPrimaryContainer"
+                    app:helperText="@string/Diperlukan"
+                    app:helperTextTextAppearance="@style/CustomHelperText"
+                    app:helperTextTextColor="@color/md_theme_errorContainer_mediumContrast"
+                    app:hintTextColor="@color/md_theme_onPrimaryContainer"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/md_theme_onSurface">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_regist_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_500"
+                        android:hint="Masukkan Kata Sandi"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/input_padding"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/md_theme_onBackground"
+                        android:textColorHint="@color/md_theme_onSurface"
+                        android:textSize="@dimen/text_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Confirm Password Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fig_600"
+                    android:text="Konfirmasi Sandi"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onPrimaryContainer"
+                    android:textSize="@dimen/text_large" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirm_password_layout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:textColorHint="@color/md_theme_onSurfaceVariant"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
+                    app:boxStrokeColor="@color/text_input_box_stroke"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/md_theme_onPrimaryContainer"
+                    app:helperText="@string/Diperlukan"
+                    app:helperTextTextAppearance="@style/CustomHelperText"
+                    app:helperTextTextColor="@color/md_theme_errorContainer_mediumContrast"
+                    app:hintTextColor="@color/md_theme_onPrimaryContainer"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/md_theme_onSurface">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirm_password_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_500"
+                        android:hint="Masukkan Kata Sandi"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/input_padding"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/md_theme_onBackground"
+                        android:textColorHint="@color/md_theme_onSurface"
+                        android:textSize="@dimen/text_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Login Prompt -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/ask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_500"
+                        android:text="Sudah punya akun?"
+                        android:textAlignment="center"
+                        android:textColor="@color/md_theme_onSurface"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/textMasuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ask"
+                        android:clickable="true"
+                        android:fontFamily="@font/fig_700"
+                        android:text=" Masuk"
+                        android:textAlignment="center"
+                        android:textColor="@color/md_theme_onPrimaryContainer"
+                        android:textSize="@dimen/text_medium" />
+                </RelativeLayout>
+
+                <!-- Register Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/regist_btn"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="@dimen/button_width_wide"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:fontFamily="@font/fig_600"
+                    android:text="@string/daftar"
+                    android:textSize="@dimen/text_large" />
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/md_theme_background" />
+    <item>
+        <bitmap
+            android:src="@drawable/colormate_logo_img"
+            android:gravity="center"
+            android:width="200dp"
+            android:height="200dp" />
+    </item>
+</layer-list>

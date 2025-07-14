@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".HelpActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backBtn"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:icon="@drawable/ic_back"
+            app:iconSize="24dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/fig_600"
+            android:text="Panduan Aplikasi"
+            android:textColor="@color/md_theme_onSurface"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintVertical_bias="0.408">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/colorDetectCard"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:cardCornerRadius="15dp"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/deteksiWarnaIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_color_detection"
+                    app:tint="@color/md_theme_primary" />
+
+                <TextView
+                    android:id="@+id/deteksiWarnaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/fig_500"
+                    android:text="Panduan Pemindai Warna"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/colorBlindQuizCard"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:cardCornerRadius="15dp"
+
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/tesButaWarnaIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_color_blind_test"
+                    app:tint="@color/md_theme_primary" />
+
+                <TextView
+                    android:id="@+id/kuisButaWarnaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/fig_500"
+                    android:text="Panduan Kuis Buta Warna"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

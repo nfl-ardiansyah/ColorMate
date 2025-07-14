@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "426192351686",
+    "project_id": "colormate-b2a75",
+    "storage_bucket": "colormate-b2a75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426192351686:android:034bbf6a837fadab71c2c7",
+        "android_client_info": {
+          "package_name": "com.fchrl.colormate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeu-KTWUB89hBZVMJctNR-6Qgb0gYaooY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426192351686:android:278b279745d4aac571c2c7",
+        "android_client_info": {
+          "package_name": "com.fchrl.colorrecognition"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeu-KTWUB89hBZVMJctNR-6Qgb0gYaooY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Firestore Test Center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+
+    <!-- Test Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestSimple"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Test 1: Simple Write"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="@color/design_default_color_primary"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestAuth"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Test 2: Authenticated Write"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="@color/design_default_color_secondary"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestRead"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Test 3: Read Data"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="#4CAF50"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestUser"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Test 4: User Registration"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="#FF9800"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearLogs"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Clear Logs"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            app:backgroundTint="#757575"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+    <!-- Logs Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Test Logs:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to test Firestore connection...\n"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="2dp" />
+
+    </ScrollView>
+
+    <!-- Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E3F2FD"
+        android:padding="12dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Test Instructions:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Run tests in order\n2. Check logs for detailed info\n3. Green ✅ = Success, Red ❌ = Error"
+            android:textSize="12sp"
+            android:textColor="#1976D2" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    style="@style/Widget.Material3.CardView.Outlined"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header with score and date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Score Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/scoreText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7/10"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/fig_600"
+                        android:textColor="@color/md_theme_primary"
+                        tools:text="7/10" />
+
+                    <TextView
+                        android:id="@+id/percentageText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="70%"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fig_500"
+                        android:textColor="@color/md_theme_primary"
+                        tools:text="70%" />
+                </LinearLayout>
+
+                <!-- Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:max="100"
+                    android:progress="70"
+                    android:progressTint="@color/md_theme_primary"
+                    android:progressBackgroundTint="@color/md_theme_surfaceVariant"
+                    tools:progress="70" />
+            </LinearLayout>
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17 Jun 2025, 14:30"
+                android:textSize="12sp"
+                android:fontFamily="@font/fig_400"
+                android:textColor="@color/md_theme_outline"
+                android:layout_gravity="center_vertical"
+                tools:text="17 Jun 2025, 14:30" />
+        </LinearLayout>
+
+        <!-- Answered Questions -->
+        <TextView
+            android:id="@+id/answeredQuestionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 dari 10 pertanyaan"
+            android:textSize="14sp"
+            android:fontFamily="@font/fig_400"
+            android:textColor="@color/md_theme_onSurface"
+            android:layout_marginBottom="8dp"
+            tools:text="10 dari 10 pertanyaan" />
+
+        <!-- Diagnosis Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/diagnosis_background"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/diagnosisIconView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_medical_services"
+                app:tint="@color/md_theme_primary"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/diagnosisText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kemungkinan mengalami kesulitan membedakan warna merah-hijau"
+                android:textSize="13sp"
+                android:fontFamily="@font/fig_400"
+                android:textColor="@color/md_theme_onSurface"
+                android:lineSpacingExtra="2dp"
+                tools:text="Kemungkinan mengalami kesulitan membedakan warna merah-hijau" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

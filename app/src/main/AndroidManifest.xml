@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/colormate_logo_img"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".ColorQuizHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColorScannerHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoPembuatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizHistoryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColorBlindQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.TestFirestoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".FrontActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ColorMate.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".auth.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

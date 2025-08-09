@@ -70,7 +70,7 @@ object QuizDataProvider {
                 question = "Bagaimana kamu biasanya tahu kapan harus jalan saat di lampu merah?",
                 options = listOf(
                     QuizOption("A", "Melihat lampu berubah menjadi hijau"),
-                    QuizOption("B", "Melihat lampu paling bawah menyala"),
+                    QuizOption("B", "Melihat lampu paling bawah/paling kanan menyala"),
                     QuizOption("C", "Mengikuti kendaraan lain yang mulai jalan"),
                     QuizOption("D", "Menghitung waktu dari lampu merah")
                 ),

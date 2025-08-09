@@ -394,6 +394,10 @@ class KMeansColorDetector(
             }
         }
 
+        if (h in 20f..45f && s < 55f && v in 50f..80f) {
+            return "Cokelat Muda"
+        }
+
         // 4. Cek Warna Pucat (saturasi rendah, tapi terang)
         if (s < 35f) {
             return when (h) {

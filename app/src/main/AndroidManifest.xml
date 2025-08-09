@@ -48,9 +48,6 @@
             android:name=".ColorBlindQuizActivity"
             android:exported="false" />
         <activity
-            android:name=".test.TestFirestoreActivity"
-            android:exported="false" />
-        <activity
             android:name=".ThemeActivity"
             android:exported="false" />
         <activity

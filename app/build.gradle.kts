@@ -27,7 +27,13 @@ android {
             )
         }
         debug {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+
             isDebuggable = true
             // Tambahkan ABI untuk debugging pada emulator x86/x86_64
             splits.abi.include("x86", "x86_64", "armeabi-v7a", "arm64-v8a")

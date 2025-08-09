@@ -141,7 +141,7 @@ object QuizDataProvider {
 
             QuizQuestion(
                 id = 10,
-                category = "Kesadaran Diri - Final Assessment",
+                category = "Kesadaran Diri - Persepsi",
                 question = "Berdasarkan pengalaman hidupmu, apakah kamu pernah mengalami kesulitan yang konsisten dengan kombinasi warna tertentu?",
                 options = listOf(
                     QuizOption("A", "Tidak pernah, semua kombinasi warna mudah dibedakan"),

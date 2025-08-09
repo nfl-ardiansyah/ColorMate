@@ -376,7 +376,8 @@ class KMeansColorDetector(
         if (s < 18f) {
             return when {
                 v < 50f -> "Abu-abu Gelap"
-                v < 85f -> "Abu-abu"
+                v < 75f -> "Abu-abu"
+                v < 90f -> "Abu-abu Terang"
                 else -> "Putih"
             }
         }

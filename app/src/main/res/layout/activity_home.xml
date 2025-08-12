@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Pemindai Warna"
+                    android:text="Deteksi Warna"
                     android:textAlignment="center"
                     android:fontFamily="@font/fig_500"
                     android:textColor="@color/md_theme_onSurface"

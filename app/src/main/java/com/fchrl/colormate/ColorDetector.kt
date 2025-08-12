@@ -413,7 +413,7 @@ class ColorDetector(private val assetManager: AssetManager) {
             }
         }
 
-        // 5. Warna Standar (terang dan jenuh)
+        // 6. Warna Standar (terang dan jenuh)
         return when (h) {
             in 0f..15f, in 345f..360f -> "Merah"
             in 16f..40f -> "Jingga"

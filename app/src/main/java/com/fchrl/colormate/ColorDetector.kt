@@ -420,7 +420,7 @@ class ColorDetector(private val assetManager: AssetManager) {
             in 41f..65f -> "Kuning"
             in 66f..85f -> "Kuning Hijau"
             in 86f..160f -> "Hijau"
-            in 161f..190f -> "Hijau Biru" // Cyan-ish Green
+            in 161f..190f -> "Hijau Biru"
             in 191f..220f -> "Cyan"
             in 221f..260f -> "Biru"
             in 261f..300f -> "Ungu"

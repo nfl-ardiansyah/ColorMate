@@ -585,7 +585,7 @@ class ColorDetector(private val assetManager: AssetManager) {
             }
         }
 
-        // Add helpful context for color blind users
+        // DITAMBAHKAN: Contextual descriptions yang sama lengkap dengan KMeansColorDetector
         when (primary.lowercase()) {
             "merah" -> description.append("\n💡 Warna seperti buah tomat matang")
             "hijau" -> description.append("\n💡 Warna seperti rumput")

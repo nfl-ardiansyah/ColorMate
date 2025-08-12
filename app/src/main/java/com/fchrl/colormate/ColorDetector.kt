@@ -379,8 +379,9 @@ class ColorDetector(private val assetManager: AssetManager) {
         if (s < 18f) {
             return when {
                 v < 50f -> "Abu-abu Gelap"
-                v < 85f -> "Abu-abu"
-                else -> "Putih" // Mencakup Abu-abu terang dan Putih
+                v < 75f -> "Abu-abu"
+                v < 90f -> "Abu-abu Terang"
+                else -> "Putih"
             }
         }
 

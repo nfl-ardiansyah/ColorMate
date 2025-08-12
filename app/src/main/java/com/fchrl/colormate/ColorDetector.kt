@@ -393,7 +393,7 @@ class ColorDetector(private val assetManager: AssetManager) {
                 in 46f..150f -> "Hijau Gelap"
                 in 151f..260f -> "Biru Tua"
                 in 261f..339f -> "Ungu Tua"
-                else -> "Cokelat" // Fallback untuk warna gelap lainnya
+                else -> "Cokelat"
             }
         }
 

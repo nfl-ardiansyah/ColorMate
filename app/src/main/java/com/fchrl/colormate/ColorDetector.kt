@@ -428,7 +428,6 @@ class ColorDetector(private val assetManager: AssetManager) {
             else -> "Merah Muda"
         }
     }
-    // --- PERBAIKAN UTAMA SELESAI DI SINI ---
 
 
     /**

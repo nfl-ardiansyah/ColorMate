@@ -402,7 +402,7 @@ class ColorDetector(private val assetManager: AssetManager) {
             return "Cokelat Muda"
         }
 
-        // 4. Cek Warna Pucat (saturasi rendah, tapi terang)
+        // 5. Cek Warna Pucat (saturasi rendah, tapi terang)
         if (s < 35f) {
             return when (h) {
                 in 0f..25f, in 335f..360f -> "Merah Muda Pucat"
